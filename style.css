@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -246,6 +247,7 @@ article {
         align-items: center; */
         width: 100%;
         height: 60px;
+        position: relative;
     }
 
     nav .logo img {
@@ -255,18 +257,41 @@ article {
 
     nav ul {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         list-style: none;
     }
 
     nav .menu {
+        display: inline-block;
+        z-index: 100;
+        background-color: hsl(36, 100%, 99%);
+        width: 60vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-top: 120px;
+        transition: transform 0.5s ease-in;
+        transform: translateX(100%);
+    }
+
+    .container::before {
+        background-color: rgba(0, 0, 0, 0.623);
         display: none;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        content: '';
+        top: 0;
+        left: 0;
+
     }
 
     nav .menu-items {
-        margin-left: 30px;
+        margin-bottom: 20px;
         font-size: 15px;
+        font-weight: 700;
     }
 
     nav .menu-items a {
@@ -446,6 +471,28 @@ article {
         background-size: cover;
         width: 40px;
         height: 20px;
+        cursor: pointer;
+
+    }
+
+    .close {
+        background-image: url(assets/images/icon-menu-close.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        z-index: 150;
+        margin-right: 10px;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        cursor: pointer;
+
+    }
+
+    .m-active {
+        transform: translateX(0%);
 
     }
 
