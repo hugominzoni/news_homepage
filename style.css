@@ -107,6 +107,7 @@ nav .menu-items a:hover {
     grid-area: desc;
     line-height: 1.4;
     font-size: 13px;
+    color: hsl(236, 13%, 42%);
 }
 
 .hero-btn {
@@ -116,12 +117,12 @@ nav .menu-items a:hover {
 }
 
 .hero-cta:hover {
-    background-color: hsl(5, 85%, 63%);
+    background-color: hsl(240, 100%, 5%);
     cursor: pointer;
 }
 
 .hero-cta {
-    background-color: hsl(240, 100%, 5%);
+    background-color: hsl(5, 85%, 63%);
     color: hsl(36, 100%, 99%);
     text-transform: uppercase;
     padding: 10px 30px;
@@ -224,6 +225,7 @@ article {
     font-size: 12px;
     line-height: 1.6;
     margin-top: 10px;
+    color: hsl(236, 13%, 42%)
 }
 
 
@@ -358,12 +360,12 @@ article {
     }
 
     .hero-cta:hover {
-        background-color: hsl(5, 85%, 63%);
+        background-color: hsl(240, 100%, 5%);
         cursor: pointer;
     }
 
     .hero-cta {
-        background-color: hsl(240, 100%, 5%);
+        background-color: hsl(5, 85%, 63%);
         color: hsl(36, 100%, 99%);
         text-transform: uppercase;
         padding: 14px 30px;
@@ -466,6 +468,7 @@ article {
         font-size: 14px;
         line-height: 1.6;
         margin-top: 10px;
+        color: hsl(236, 13%, 42%);
     }
 
     .art2,
