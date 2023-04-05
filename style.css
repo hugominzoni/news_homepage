@@ -232,7 +232,7 @@ article {
 /*MOBILE VERSION*/
 
 
-@media all and (max-width: 450px) {
+@media screen and (min-width: 480px) {
 
     .container {
         max-width: 100vw;
